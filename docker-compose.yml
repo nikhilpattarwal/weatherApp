@@ -3,8 +3,9 @@ version: "3.8"
 services:
   weather-app:
     build:
-      context: .
-      dockerfile: Dockerfile
+      # context: .
+      # dockerfile: Dockerfile
+      image: "nikhilpattarwal/weather-app"
     ports:
       - "8000:80"
     environment:
