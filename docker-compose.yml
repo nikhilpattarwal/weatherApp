@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  weather-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    environment:
+      VITE_API_KEY: "1b8b48c12a95f7f9e159082abeaf6375"
